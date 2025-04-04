@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #ff3333;
+    --secondary: #990000;
+    --background: #1a0000;
+    --surface: rgba(255, 255, 255, 0.05);
+    --text: #ffffff;
+    --neon-glow: 0 0 10px rgba(255, 51, 51, 0.5);
+}
+
+/* Bubble Animation */
+.bubble {
+    position: fixed;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 51, 51, 0.2), rgba(153, 0, 0, 0.1));
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    animation: float 20s infinite;
+    z-index: -1;
+    opacity: 0;
+}
+
+.bubble:nth-child(1) {
+    width: 150px;
+    height: 150px;
+    left: -5%;
+    animation: float1 25s infinite;
+}
+
+.bubble:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    left: 25%;
+    animation: float2 30s infinite;
+}
+
+.bubble:nth-child(3) {
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    animation: float3 28s infinite;
+}
+
+.bubble:nth-child(4) {
+    width: 120px;
+    height: 120px;
+    left: 75%;
+    animation: float4 22s infinite;
+}
+
+.bubble:nth-child(5) {
+    width: 70px;
+    height: 70px;
+    left: 15%;
+    animation: float5 32s infinite;
+}
+
+.bubble:nth-child(6) {
+    width: 90px;
+    height: 90px;
+    left: 40%;
+    animation: float6 27s infinite;
+}
+
+.bubble:nth-child(7) {
+    width: 130px;
+    height: 130px;
+    left: 65%;
+    animation: float7 24s infinite;
+}
+
+.bubble:nth-child(8) {
+    width: 60px;
+    height: 60px;
+    left: 85%;
+    animation: float8 29s infinite;
+}
+
+.bubble:nth-child(9) {
+    width: 110px;
+    height: 110px;
+    left: 0%;
+    animation: float9 26s infinite;
+}
+
+.bubble:nth-child(10) {
+    width: 85px;
+    height: 85px;
+    left: 45%;
+    animation: float10 31s infinite;
+}
+
+@keyframes float1 {
+    0% { transform: translate(0, 110vh) rotate(0deg); opacity: 0; }
+    20% { transform: translate(10vw, 80vh) rotate(90deg); opacity: 0.5; }
+    40% { transform: translate(20vw, 50vh) rotate(180deg); opacity: 0.5; }
+    60% { transform: translate(10vw, 20vh) rotate(270deg); opacity: 0.5; }
+    80% { transform: translate(0vw, -10vh) rotate(360deg); opacity: 0.5; }
+    100% { transform: translate(-10vw, -20vh) rotate(420deg); opacity: 0; }
+}
+
+@keyframes float2 {
+    0% { transform: translate(0, 110vh) rotate(0deg); opacity: 0; }
+    20% { transform: translate(-15vw, 80vh) rotate(90deg); opacity: 0.5; }
+    40% { transform: translate(-25vw, 50vh) rotate(180deg); opacity: 0.5; }
+    60% { transform: translate(-15vw, 20vh) rotate(270deg); opacity: 0.5; }
+    80% { transform: translate(-5vw, -10vh) rotate(360deg); opacity: 0.5; }
+    100% { transform: translate(5vw, -20vh) rotate(420deg); opacity: 0; }
+}
+
+@keyframes float3 {
+    0% { transform: translate(0, 110vh) rotate(0deg); opacity: 0; }
+    20% { transform: translate(20vw, 80vh) rotate(90deg); opacity: 0.5; }
+    40% { transform: translate(30vw, 50vh) rotate(180deg); opacity: 0.5; }
+    60% { transform: translate(20vw, 20vh) rotate(270deg); opacity: 0.5; }
+    80% { transform: translate(10vw, -10vh) rotate(360deg); opacity: 0.5; }
+    100% { transform: translate(0vw, -20vh) rotate(420deg); opacity: 0; }
+}
+
+@keyframes float4 {
+    0% { transform: translate(0, 110vh) rotate(0deg); opacity: 0; }
+    20% { transform: translate(-20vw, 80vh) rotate(90deg); opacity: 0.5; }
+    40% { transform: translate(-30vw, 50vh) rotate(180deg); opacity: 0.5; }
+    60% { transform: translate(-20vw, 20vh) rotate(270deg); opacity: 0.5; }
+    80% { transform: translate(-10vw, -10vh) rotate(360deg); opacity: 0.5; }
+    100% { transform: translate(0vw, -20vh) rotate(420deg); opacity: 0; }
+}
+
+@keyframes float5 {
+    0% { transform: translate(0, 110vh) rotate(0deg); opacity: 0; }
+    20% { transform: translate(15vw, 80vh) rotate(90deg); opacity: 0.5; }
+    40% { transform: translate(25vw, 50vh) rotate(180deg); opacity: 0.5; }
+    60% { transform: translate(15vw, 20vh) rotate(270deg); opacity: 0.5; }
+    80% { transform: translate(5vw, -10vh) rotate(360deg); opacity: 0.5; }
+    100% { transform: translate(-5vw, -20vh) rotate(420deg); opacity: 0; }
+}
+
+@keyframes float6 {
+    0% { transform: translate(0, 110vh) rotate(0deg); opacity: 0; }
+    20% { transform: translate(-25vw, 80vh) rotate(90deg); opacity: 0.5; }
+    40% { transform: translate(-35vw, 50vh) rotate(180deg); opacity: 0.5; }
+    60% { transform: translate(-25vw, 20vh) rotate(270deg); opacity: 0.5; }
+    80% { transform: translate(-15vw, -10vh) rotate(360deg); opacity: 0.5; }
+    100% { transform: translate(-5vw, -20vh) rotate(420deg); opacity: 0; }
+}
+
+@keyframes float7 {
+    0% { transform: translate(0, 110vh) rotate(0deg); opacity: 0; }
+    20% { transform: translate(25vw, 80vh) rotate(90deg); opacity: 0.5; }
+    40% { transform: translate(35vw, 50vh) rotate(180deg); opacity: 0.5; }
+    60% { transform: translate(25vw, 20vh) rotate(270deg); opacity: 0.5; }
+    80% { transform: translate(15vw, -10vh) rotate(360deg); opacity: 0.5; }
+    100% { transform: translate(5vw, -20vh) rotate(420deg); opacity: 0; }
+}
+
+@keyframes float8 {
+    0% { transform: translate(0, 110vh) rotate(0deg); opacity: 0; }
+    20% { transform: translate(-10vw, 80vh) rotate(90deg); opacity: 0.5; }
+    40% { transform: translate(-20vw, 50vh) rotate(180deg); opacity: 0.5; }
+    60% { transform: translate(-10vw, 20vh) rotate(270deg); opacity: 0.5; }
+    80% { transform: translate(0vw, -10vh) rotate(360deg); opacity: 0.5; }
+    100% { transform: translate(10vw, -20vh) rotate(420deg); opacity: 0; }
+}
+
+@keyframes float9 {
+    0% { transform: translate(0, 110vh) rotate(0deg); opacity: 0; }
+    20% { transform: translate(30vw, 80vh) rotate(90deg); opacity: 0.5; }
+    40% { transform: translate(40vw, 50vh) rotate(180deg); opacity: 0.5; }
+    60% { transform: translate(30vw, 20vh) rotate(270deg); opacity: 0.5; }
+    80% { transform: translate(20vw, -10vh) rotate(360deg); opacity: 0.5; }
+    100% { transform: translate(10vw, -20vh) rotate(420deg); opacity: 0; }
+}
+
+@keyframes float10 {
+    0% { transform: translate(0, 110vh) rotate(0deg); opacity: 0; }
+    20% { transform: translate(-30vw, 80vh) rotate(90deg); opacity: 0.5; }
+    40% { transform: translate(-40vw, 50vh) rotate(180deg); opacity: 0.5; }
+    60% { transform: translate(-30vw, 20vh) rotate(270deg); opacity: 0.5; }
+    80% { transform: translate(-20vw, -10vh) rotate(360deg); opacity: 0.5; }
+    100% { transform: translate(-10vw, -20vh) rotate(420deg); opacity: 0; }
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background: linear-gradient(135deg, var(--background), #000000);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    background: var(--surface);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+/* Remove the animated background and container glow */
+body::before,
+body::after,
+.container::before {
+    display: none;
+}
+
+/* Timer Styles */
+.timer {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    font-variant-numeric: tabular-nums;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: var(--neon-glow);
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 120px;
+    position: relative;
+    will-change: transform;
+}
+
+/* Update separator color to match red theme */
+.timer.stopwatch .separator {
+    color: var(--primary);
+    text-shadow: var(--neon-glow);
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: var(--neon-glow);
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+}
+
+/* Timer Styles */
+.timer.stopwatch {
+    font-size: 4rem;
+    min-width: 380px;
+    height: 120px;
+    margin: 2rem auto;
+    position: relative;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer.stopwatch span:not(.separator) {
+    min-width: 2.2ch;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Separator styling for stopwatch */
+.timer.stopwatch .separator {
+    min-width: 0.7ch;
+    display: inline-block;
+    padding: 0;
+    margin: 0 2px;
+    opacity: 1;
+    background: none;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+}
+
+.timer.running .separator {
+    animation: blink-visible 1s infinite;
+}
+
+@keyframes blink-visible {
+    0% { opacity: 1; }
+    50% { opacity: 0.2; }
+    100% { opacity: 1; }
+}
+
+/* Remove the old pulse animation from the timer */
+.timer.running {
+    animation: none;
+}
+
+/* Lap styles */
+.laps-container {
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+}
+
+.lap-button {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    margin-bottom: 1rem;
+}
+
+.laps-list {
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lap-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    margin: 0.5rem 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.lap-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
+    box-shadow: var(--neon-glow);
+}
+
+.lap-number {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.lap-time {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+
+/* Scrollbar styling for laps list */
+.laps-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.laps-list::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.laps-list::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: 4px;
+}
+
+.laps-list::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, var(--secondary), var(--primary));
+}
+
+/* Button Styles */
+.controls {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+button {
+    font-family: 'Rajdhani', sans-serif;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: 600;
+    min-width: 120px;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: var(--neon-glow);
+}
+
+/* Control button specific styles */
+#stopwatch-start {
+    background: linear-gradient(135deg, #ff4d4d, #cc0000);
+}
+
+#stopwatch-start:hover {
+    background: linear-gradient(135deg, #ff6666, #ff0000);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
+
+#stopwatch-pause {
+    background: linear-gradient(135deg, #ff9933, #cc6600);
+}
+
+#stopwatch-pause:hover {
+    background: linear-gradient(135deg, #ffad33, #ff8000);
+    box-shadow: 0 0 15px rgba(255, 128, 0, 0.5);
+}
+
+#stopwatch-reset {
+    background: linear-gradient(135deg, #cc3300, #991a00);
+}
+
+#stopwatch-reset:hover {
+    background: linear-gradient(135deg, #ff4000, #cc2200);
+    box-shadow: 0 0 15px rgba(204, 34, 0, 0.5);
+} 

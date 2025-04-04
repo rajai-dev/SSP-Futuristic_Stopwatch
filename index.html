@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="creator" content="Awais Rajai">
+    <meta name="description" content="A futuristic stopwatch with a sleek design and a neon glow effect.">
+    <title>Futuristic Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="container">
+        <div id="stopwatch-tab" class="tab-content active">
+            <h1>Stopwatch</h1>
+            <div class="timer stopwatch">
+                <span id="stopwatch-hours">00</span><span class="separator">:</span><span id="stopwatch-minutes">00</span><span class="separator">:</span><span id="stopwatch-seconds">00</span>
+            </div>
+            <div class="controls">
+                <button id="stopwatch-start">Start</button>
+                <button id="stopwatch-pause">Pause</button>
+                <button id="stopwatch-reset">Reset</button>
+            </div>
+            <div class="laps-container">
+                <button id="lap" class="lap-button">Lap</button>
+                <div class="laps-list"></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
